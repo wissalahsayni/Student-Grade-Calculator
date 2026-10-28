@@ -1,0 +1,120 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #100D18, #24143D);
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 16px;
+}
+
+/* 2. Main title */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+body > p {
+    color: #C4B5FD;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+/* 3. Form card */
+form {
+    width: 100%;
+    max-width: 420px;
+    padding: 28px;
+
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    backdrop-filter: blur(12px);
+}
+
+/* 4. Labels */
+label {
+    font-size: 14px;
+    color: #E9D5FF;
+    margin-top: 8px;
+}
+
+/* 5. Input fields */
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #51416C;
+    border-radius: 10px;
+
+    background: #211A30;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #A78BFA;
+}
+
+/* 6. Calculate button */
+button {
+    margin-top: 16px;
+    padding: 14px;
+
+    background: #8B5CF6;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #7C3AED;
+    transform: translateY(-2px);
+}
+
+/* 7. Result section */
+h2 {
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+
+#result {
+    color: #C4B5FD;
+    text-align: center;
+}
+
+/* 8. Mobile screen */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
